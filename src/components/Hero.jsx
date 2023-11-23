@@ -10,11 +10,12 @@ export default function Hero() {
           <div className='greeting'>
             <h1>Ei Gude!</h1>
             <h1>
-              I&apos;m <span className=''>Bram</span>
+              I&apos;m <span className='text-special'>Bram</span>
             </h1>
           </div>
-          <img src={avatar} className='avatar' />
         </div>
+        <img src={avatar} className='avatar' />
+
         <h3 className='subtitle'>Frontend explorer</h3>
         <p>
           Just scratched the surface of the frontend world, amazed and heading
@@ -32,6 +33,21 @@ export default function Hero() {
           </Link>
         </div>
       </div>
+
+
     </>
   );
+}
+
+{
+  /* <div className='hero-greeting'>
+          <div className='greeting'>
+            <h1>Ei Gude!</h1>
+            <h1>
+              I&apos;m <span className=''>Bram</span>
+            </h1>
+          </div>
+          <img src={avatar} className='avatar' />
+        </div> 
+         */
 }

@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Journey() {
   return (
     <div className='journey-container'>
       <h3 className='subtitle'>My Journey</h3>
-      <div className='journey-content'>
+      <div className='chapter'>
         <p className='description'>
           Heard of Dreamweaver? Ouff, that was decades ago. At that time, when i
-          designed my first ever website in junior high. Not the perfect rocket
+          designed my first ever website in junior high school. Not the perfect rocket
           launch, I&apos;d say. However, some years later, the older version of
           me encouraged himself and found the passion and fun to try to conquer
           the world beyond knowledge.
@@ -17,15 +19,16 @@ export default function Journey() {
           unique perpective as a frontend web developer. As I continued my
           journey at Frankfurt University of Applied Sciences in Germany, where
           I studied Computer Science, I worked and researched of the
-          <span className=''> sustainability</span>
-          {' '}aspects of and possibilites for websites.
+          <span className=''> sustainability</span> aspects of and possibilites
+          for websites.
         </p>
         <p className='description'>
           Trial and error is no taboo. I learn and re-learn many times until I
           grasp it and have the A-ha moment that I&apos;ve been waiting for.
         </p>
 
-        <div className="quests-container">
+        {/* TODO: React Swiper */}
+        <div className='quests-container'>
           <h3>On-Going Quests</h3>
           <div className='quests'>
             <p>html,css</p>
@@ -33,6 +36,10 @@ export default function Journey() {
             <p>Library</p>
           </div>
         </div>
+
+        <h3>
+          Check out of <Link to='projects'>My Projects</Link> during my quests
+        </h3>
       </div>
     </div>
   );

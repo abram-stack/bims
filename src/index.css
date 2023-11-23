@@ -11,14 +11,19 @@ body{
 /* font-family: 'Space Grotesk', sans-serif; */
 h1,h2,h3,p{
   margin: 0;
-  padding: 0;
 }
 a{
   text-decoration: none;
 }
-
+.link{
+  color: #5F1C1C;
+  font-family: inherit;
+}
+.link:hover{
+  text-decoration: underline;
+}
 .container{
-  padding: .2rem 2.5rem;
+  padding: 2rem 2.5rem;
 }
 header{
   padding: 1rem 2.5rem;
@@ -46,9 +51,6 @@ header{
 /*
   HOMEPAGE
 */
-.home-container{
-  margin-top: 4rem;
-}
 .greeting h1{
   font-family: 'Space Grotesk', sans-serif;
   font-size: 4rem;
@@ -60,32 +62,41 @@ header{
 }
 /* #abc7dd */
 .hero-container{
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 1rem;
 }
 .hero-greeting{
   display: flex;
   align-items: center;
-  height: 250px;
-}
-.avatar{
-  margin:0 auto;
-  border-radius: 5px;
-  height: 90%;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  flex-direction: column;
 }
 
+.avatar{
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  max-width: 350px;
+}
 .subtitle{
   font-family: 'Rubik Mono One', monospace;
   color: #D2C193;
   text-shadow: -2px 4px #5F1C1C;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #011423;
+  -webkit-text-stroke-color: #303030;
 }
-
+.text-special{
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color:#abc7dd;
+  text-shadow: -2px 4px #24494f;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #151928;
+}
 .social-container{
   display: flex;
   gap: 5px;
@@ -101,14 +112,19 @@ header{
 .journey-container{
   margin-bottom: 2rem;
 }
-.journey-content{
+.chapter{
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
-.description{
+
+.chapter .description{
+  padding: 1rem;
   line-height: 1.5rem;
+  background-color: #e2e7ed;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 /* 
@@ -123,7 +139,6 @@ QUESTS
 .quests{
   display: flex;
   width: 100%;
-  border: 1px solid red;
   justify-content: space-between;
 }
 
@@ -137,6 +152,15 @@ footer{
   margin-top: 4rem;
 }
 .footer-content{
-  border: 1px solid red;
   text-align: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ABOUT Page */
+.slider{
+  border: 1px solid brown;
+}
+
+.story-container{
+  margin-top: 2rem;
 }
