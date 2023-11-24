@@ -30,13 +30,28 @@ header{
   display: flex;
   justify-content: space-between;
 }
+/* 
+FOOTER 
+*/
+footer {
+  padding: .5rem 0;
+  background-color: #4D807C;
+  color: #F4E1E5;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  text-align: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
 .site-logo{
-  font-family: 'Rubik Mono One', monospace;
-  text-shadow: -2px 4px #24494f;
+font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #abc7dd;
+  text-shadow: -2px 3px #24494f;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #151928;
-  color: #abc7dd;
-  font-size: 1.2rem;
 }
 .navbar{
   display: flex;
@@ -53,11 +68,11 @@ header{
 */
 .greeting h1{
   font-family: 'Space Grotesk', sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #4D807C;
   font-size: 4rem;
   font-weight: 700;
   color: #F4E1E5;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #4D807C;
 
 }
 /* #abc7dd */
@@ -110,52 +125,94 @@ header{
 }
 
 .journey-container{
+  margin-top: 6rem;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .chapter{
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
+.chapter h3, .service-container h3, .experience-container h3, .experience-container h4{
+  color: #5F1C1C;
+}
 .chapter .description{
+  text-align: center;
   padding: 1rem;
   line-height: 1.5rem;
-  background-color: #e2e7ed;
+  /* background-color: #e2e7ed; */
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 /* 
-QUESTS 
+  SERVICES
 */
-
-.quests-container{
+.service-container{
+  text-align: center;
+  background-color: #dedbd2;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.service-container h3, .exp-intro h3 {
+  margin-bottom: 1rem;
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.service img{
+  height: 150px;
+  
+}
+.service p{
+  padding:0 1rem
 }
 .quests{
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-/* 
-FOOTER 
-*/
-footer{
-  padding: .5rem 0;
-  background-color: #4D807C;
-  color: #F4E1E5;
-  margin-top: 4rem;
-}
-.footer-content{
+/* EXPERIENCE */
+.experience-container{
   text-align: center;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
+.work{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills img{
+  height: 100px;
+}
+.tech-stack{
+  display: flex;
+  flex-direction: column;
+}
+.workplace img{
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+}
 /* ABOUT Page */
 .slider{
   border: 1px solid brown;

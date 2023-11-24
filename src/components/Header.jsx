@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <header>
       <Link className='site-logo' to='/'>
-        Console
-        <br /> Botanesia
+        Bram 
+        <br /> Bimo
       </Link>
       <nav className='navbar'>
         <NavLink to='about'>About</NavLink>

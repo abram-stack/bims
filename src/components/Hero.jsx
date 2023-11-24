@@ -5,7 +5,7 @@ import { BiLogoGithub, BiLogoLinkedin, BiLogoTwitter } from 'react-icons/bi';
 export default function Hero() {
   return (
     <>
-      <div className='hero-container'>
+      <div className='hero-container container'>
         <div className='hero-greeting'>
           <div className='greeting'>
             <h1>Ei Gude!</h1>
@@ -37,17 +37,4 @@ export default function Hero() {
 
     </>
   );
-}
-
-{
-  /* <div className='hero-greeting'>
-          <div className='greeting'>
-            <h1>Ei Gude!</h1>
-            <h1>
-              I&apos;m <span className=''>Bram</span>
-            </h1>
-          </div>
-          <img src={avatar} className='avatar' />
-        </div> 
-         */
 }
